@@ -1,0 +1,162 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPQRzCdRKia1YqMlqEaPU2g",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AranyaJ633021028/BasicProg_DataViz65/blob/main/HW01\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "id": "X7KZi1YgNDZN"
+      },
+      "outputs": [],
+      "source": [
+        "def time_sec(T1,T2):\n",
+        "  sp_T1 = T1.split(':')\n",
+        "  sp_T2 = T2.split(':')\n",
+        "  a = (int(sp_T1[0])*60*60)+(int(sp_T1[1])*60)+int(sp_T1[2])\n",
+        "  b = (int(sp_T2[0])*60*60)+(int(sp_T2[1])*60)+int(sp_T2[2])\n",
+        "  y = b-a\n",
+        "  return y\n",
+        "\n",
+        "  print('done!')\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A1 = time_sec('09:11:50','12:30:15')"
+      ],
+      "metadata": {
+        "id": "Sin6zJosNHy4"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f'ความต่างของเวลา 09:11:50 และ 12:30:15 เป็นวินาที เท่ากับ {A1} วินาที')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KoD__-VMPN-o",
+        "outputId": "1451a7df-b850-42e7-e79d-6324a4e2475b"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ความต่างของเวลา 09:11:50 และ 12:30:15 เป็นวินาที เท่ากับ 11905 วินาที\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "21YIsc7fapY3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A2 = time_sec('13:41:07','20:00:18')"
+      ],
+      "metadata": {
+        "id": "9Qk9g4M6PsuF"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f'ความต่างของเวลา 13:41:07 และ 20:00:18 เป็นวินาที เท่ากับ {A2} วินาที')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_FVogrTgZi_Z",
+        "outputId": "1eecb01e-000e-4a2a-d8aa-ec6543d8a644"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ความต่างของเวลา 13:41:07 และ 20:00:18 เป็นวินาที เท่ากับ 22751 วินาที\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A3 = time_sec('00:00:00','23:59:59')"
+      ],
+      "metadata": {
+        "id": "YTWCPpBgZ0KF"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f'ความต่างของเวลา 00:00:00 และ 23:59:59 เป็นวินาที เท่ากับ {A3} วินาที')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uD4QTW5zaAim",
+        "outputId": "8b8901e2-28f6-4006-9116-e13fcc1cec74"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ความต่างของเวลา 00:00:00 และ 23:59:59 เป็นวินาที เท่ากับ 86399 วินาที\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
